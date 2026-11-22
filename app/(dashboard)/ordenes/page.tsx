@@ -1,8 +1,15 @@
-export default function Page() {
+import { OrdersPilot } from "../../../modules/orders/components/OrdersPilot";
+
+export default function OrdenesPage() {
   return (
     <section>
       <h1>02 · Órdenes de transporte</h1>
-      <p>Módulo en construcción por su estudiante responsable, siguiendo los seis pasos: comprender, diseñar, construir, integrar, probar y defender.</p>
+      <p>
+        Toda operación nace aquí: la solicitud del cliente con su carga, su ruta y su flete
+        acordado. Este es el <strong>módulo piloto</strong>: el estándar de estructura y de
+        reglas que los demás módulos deben igualar.
+      </p>
+      <OrdersPilot />
     </section>
   );
 }

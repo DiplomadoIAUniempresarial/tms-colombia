@@ -1,7 +1,15 @@
 /**
- * Módulo "orders" del TMS Colombia.
- * Estructura oficial (Documento Técnico §21.1): components/ · services/ · schemas/ · types/
- * La lógica de negocio vive en services/; las páginas de app/ solo la presentan.
- * El brief individual de este módulo está en docs/modules/.
+ * Módulo 02 · Órdenes de transporte — superficie pública del módulo.
+ * Otros módulos consumen SOLO lo exportado aquí y los tipos de core/types.
  */
-export {};
+export { createOrderSchema, type CreateOrderInput } from "./schemas/order.schema";
+export {
+  ORDER_TRANSITIONS,
+  canTransition,
+  assertTransition,
+  isEditable,
+  nextOrderNumber,
+} from "./services/order.rules";
+export { listOrders, createOrder, transitionOrderStatus } from "./services/order.service";
+export { OrderTable, type OrderTableProps } from "./components/OrderTable";
+export { OrderForm, type OrderFormProps } from "./components/OrderForm";
