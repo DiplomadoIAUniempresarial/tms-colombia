@@ -1,0 +1,2 @@
+# Reglas de desarrollo — TMS Colombia (resumen)
+Flujo: rama `feature/NN-modulo` → commits → Pull Request → revisión del docente → `main`. Prohibido: modificar el núcleo o contratos sin autorización, crear tablas duplicadas, cambiar nombres de campos comunes, subir secretos, hacer integraciones reales (RNDC/DIAN/SICE-TAC/GPS), tocar módulos ajenos. Cada módulo encapsula su lógica en `modules/<modulo>/services/`; las páginas no concentran la lógica. Las instrucciones completas para los agentes están en `AGENTS.md`.

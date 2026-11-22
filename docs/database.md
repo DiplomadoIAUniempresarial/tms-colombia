@@ -1,0 +1,2 @@
+# Base de datos — TMS Colombia (resumen)
+La referencia completa es el **Documento Técnico Rector** (§5 a §18). Convenciones: tablas en inglés plural, columnas snake_case, UUID, timestamptz, dinero en numeric, peso en kg, volumen en m³, estados con valores controlados (los mismos de `core/types`). Migraciones en `supabase/migrations/`, aplicadas solo por el docente. RLS activo en todas las tablas: cada usuario solo ve las empresas a las que pertenece (`is_company_member`).

@@ -1,0 +1,2 @@
+# Contratos — TMS Colombia (resumen)
+Los contratos TypeScript compartidos viven en `core/types/` (Documento Técnico Rector §20): Company, Party, Location, Vehicle, Driver, TransportOrder, Trip, TripEvent, TransportRemittance, TransportManifest, DeliveryRecord, TripCost, TripSettlement. El contrato regulatorio vive en `integrations/rndc/contracts/` (§18). Cambiar un contrato exige PR aprobado por el docente y revisión de impacto sobre los demás módulos.

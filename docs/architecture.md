@@ -1,0 +1,2 @@
+# Arquitectura — TMS Colombia (resumen)
+La referencia completa es el **Documento Técnico Rector** (§2 y §3): monolito modular, una sola aplicación Next.js, una sola base PostgreSQL (Supabase), diez módulos con responsabilidades delimitadas, núcleo compartido administrado por el docente, capa de integraciones desacoplada (proveedor regulatorio intercambiable; en el curso, solo el simulador). Sin microservicios, sin dependencias circulares, sin diez aplicaciones.

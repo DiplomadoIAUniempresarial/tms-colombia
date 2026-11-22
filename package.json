@@ -1,0 +1,26 @@
+{
+  "name": "tms-colombia",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TMS Colombia — Laboratorio de desarrollo de software asistido por IA (Diplomado de IA, Uniempresarial). Monolito modular: Next.js + TypeScript + Supabase + Vercel.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.5.2",
+    "@supabase/supabase-js": "^2.46.1",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.6.3"
+  }
+}
